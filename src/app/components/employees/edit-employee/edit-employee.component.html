@@ -1,0 +1,39 @@
+<div class="container my-5">   
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h3 class="mb-3">Edit Employee</h3>
+            <form #form="ngForm" >
+                <div class="form-group">
+                    <label for="name">Id</label>
+                    <input type="text" class="form-control" id="id" name="id" [(ngModel)] = "employeeDetails.id" placeholder="Enter Your name">
+                </div>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" [(ngModel)] = "employeeDetails.name" placeholder="Enter Your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" [(ngModel)] = "employeeDetails.email"  placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" class="form-control" id="phone" name="phone" [(ngModel)] = "employeeDetails.phone" placeholder="Phone number">
+                </div>
+
+                <div class="form-group">
+                    <label for="salary">Salary</label>
+                    <input type="text" class="form-control" id="salary"  name="salary" [(ngModel)] = "employeeDetails.salary" placeholder="Salary">
+                </div>
+
+                <div class="form-group">
+                    <label for="salary">Department</label>
+                    <input type="text" class="form-control" id="department" name="epartment" [(ngModel)] = "employeeDetails.department" placeholder="depatment">
+                </div>
+
+                <button type="submit" class="btn btn-primary m-2" style="margin:56 auto;">Update</button>
+            </form>        
+        </div>
+    </div>
+
+</div>
